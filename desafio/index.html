@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Logo.png" alt="Foto de Logo de Alura">
+    </header>
+    <main>
+        <section class="seccion__dividir"> 
+            <textarea class="container__input" placeholder ="Ingrese el texto aqui"></textarea>
+            <div class="texto__botones">
+                <img src="./assets/biex.png" alt="Foto de desarrolando un proyecto">
+                <h2 class="presentacion__botones__subtitulo">Solo letras minusculas y sin acentos</h2>
+            </div> 
+            <div class="botones">
+                <button type="submit" onclick="encriptar();" class="container__boton__1"> Encriptar</button>
+                <button type="submit" onclick="desEncriptar();" class="container__boton__2">Desencriptar</button>
+            </div>    
+        </section>
+        <section class="division__dos">
+            <div class="tarjeta">
+                <img class="presentacion__imagen" src="./assets/Muñeco.png" alt="Foto de desarrolando un proyecto">
+                <p class="texto_uno">Ningun mensaje fue encontrado</p>
+                <p class="texto_dos">Ingrese el texto que desee encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" onclick="copiar()" class="container__boton_copiar">copiar</button>
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
